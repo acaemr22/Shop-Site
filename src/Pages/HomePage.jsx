@@ -6,9 +6,9 @@ import Footer from "../Components/Footer";
 import { NavLink, useLoaderData } from "react-router-dom";
 
 export async function HomePageLoader() {
-  const firstScrollDataFetch = await fetch("/web-scraper/JSON/SuCo/scrapedDataFirstHorScroll.json")
+  const firstScrollDataFetch = await fetch("../../web-scraper/JSON/SuCo/scrapedDataFirstHorScroll.json")
   const firstScrollData = await firstScrollDataFetch.json()
-  const secondScrollDataFetch = await fetch("/web-scraper/JSON/SuCo/scrapedDataSecondHorScroll.json")
+  const secondScrollDataFetch = await fetch("../../web-scraper/JSON/SuCo/scrapedDataSecondHorScroll.json")
   const secondScrollData = await secondScrollDataFetch.json()
   return {firstScrollData, secondScrollData}
 }
