@@ -4,7 +4,7 @@ import Card from "../Components/Card";
 
 export async function loader() {
   const data = await fetch(
-    "../../web-scraper/JSON/SuCo/scrapedDataSuCoBottles.json"
+    "/web-scraper/JSON/SuCo/scrapedDataSuCoBottles.json"
   );
   const resp = await data.json();
   return resp;

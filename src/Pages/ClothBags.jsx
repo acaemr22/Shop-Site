@@ -4,7 +4,7 @@ import { useLoaderData, useSearchParams, useOutletContext } from "react-router-d
 
 export async function loader() {
   const data = await fetch(
-    "../../web-scraper/JSON/ClothBags/scrapedDataClothBags.json"
+    "/web-scraper/JSON/ClothBags/scrapedDataClothBags.json"
   );
   const resp = await data.json();
   return resp;

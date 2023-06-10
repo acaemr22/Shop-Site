@@ -4,7 +4,7 @@ import { useLoaderData, useOutletContext } from 'react-router-dom'
 
 
 export async function loader() {
-    const data = await fetch("../../web-scraper/JSON/Shoes/scrapedDataShoes.json")
+    const data = await fetch("/web-scraper/JSON/Shoes/scrapedDataShoes.json")
     const resp = await data.json()
     return resp
 }

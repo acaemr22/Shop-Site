@@ -3,7 +3,7 @@ import Card from "../Components/Card";
 import { useLoaderData, useSearchParams } from 'react-router-dom'
 
 export async function loader() {
-  const data = await fetch("../../web-scraper/JSON/scrapedDataTechAccessories.json");
+  const data = await fetch("/web-scraper/JSON/scrapedDataTechAccessories.json");
   const resp = await data.json();
   return resp;
 }
